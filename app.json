@@ -1,10 +1,10 @@
 {
-  "name": "whatsapp-bot (Mercedes)",
-  "description": " Whatsapp bot.",
+  "name": "𝙹𝙾𝚎𝚕 𝙱𝚘𝚝",
+  "description": " 𝚆𝚑𝚊𝚝𝚜𝙰𝚙𝚙 𝚋𝚘𝚝 𝚌𝚛𝚎𝚊𝚝𝚎𝚍 𝚋𝚢 𝙻𝙾𝚛𝚍 𝙹𝙾𝚎𝚕.",
   "keywords": [
     "whatsapp bot"
   ],
-  "repository": "https://github.com/marisela2/Mercedes",
+  "repository": "https://github.com/joeljamestech2/JOEL",
   "stack": "container",
   "env": { 
       "SESSION_ID": {
