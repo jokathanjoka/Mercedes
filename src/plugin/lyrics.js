@@ -15,7 +15,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
 
     try {
       await m.React('🕘');
-      await m.reply('A moment, *Mercedes* is generating your lyrics request...');
+      await m.reply('A moment, *ᴊᴏᴇʟ ᴍᴅ* is generating your lyrics request...');
 
       if (!text.includes('|')) {
         return m.reply('Please provide the song name and artist name separated by a "|", for example: Spectre|Alan Walker.');
@@ -70,7 +70,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
                   text: lyrics
                 }),
                 footer: proto.Message.InteractiveMessage.Footer.create({
-                  text: "> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Mercedes*"
+                  text: "> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴊᴏᴇʟ*"
                 }),
                 header: proto.Message.InteractiveMessage.Header.create({
                   title: "",
