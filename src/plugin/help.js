@@ -88,7 +88,7 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
           },
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
-              text: `┏━━━━━━━━━━━━
+              text: `┏❐
 ┃𝚋𝚘𝚝 𝚗𝚊𝚖𝚎:𝙹𝙾𝚎𝚕 𝚋𝚘𝚝*
 ╽𝚟𝚒𝚜𝚒𝚘𝚗: 𝟼.𝟶.𝟶
 ┃ᴏᴡɴᴇʀ : *𝙹𝚘𝚎𝚕*      
@@ -98,7 +98,7 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
 ┃𝚙𝚛𝚎𝚏𝚒𝚡: [${pref}]
 ┃𝚝𝚑𝚎𝚖𝚎:𝙹𝙾𝚎𝚕 𝚃𝚎𝚌𝚑
 ┃𝙻𝚒𝚋𝚛𝚊𝚛𝚢:𝚋𝚊𝚒𝚕𝚠𝚊𝚢𝚜(𝚆𝙱)
-┗━━━━━━━━━━━━`
+┗❑`
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
               text: "𝚙𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢 𝙹𝙾𝚎𝚕 𝚔𝚊𝚗𝚐'𝚘𝚖𝚊"
