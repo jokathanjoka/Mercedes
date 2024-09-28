@@ -88,18 +88,20 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
           },
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
-              text: `╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *Mercedes*
-│📍 ᴠᴇʀꜱɪᴏɴ: 2.0.0
-│👨‍💻 ᴏᴡɴᴇʀ : *Marisel*      
-│👤 ɴᴜᴍʙᴇʀ: 254740007567
-│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
-│🛡 ᴍᴏᴅᴇ: *${mode}*
-│💫 ᴘʀᴇғɪx: [${pref}]
-╰─────────────━┈⊷ `
+              text: `┏━━━━━━━━━━━━
+┃𝚋𝚘𝚝 𝚗𝚊𝚖𝚎:𝙹𝙾𝚎𝚕 𝚋𝚘𝚝*
+╽𝚟𝚒𝚜𝚒𝚘𝚗: 𝟼.𝟶.𝟶
+┃ᴏᴡɴᴇʀ : *𝙹𝚘𝚎𝚕*      
+┃𝚜𝚝𝚊𝚝𝚞𝚜:𝚋𝚘𝚝 𝚒𝚜 𝚘𝚗𝚕𝚒𝚗𝚎
+┃𝚙𝚕𝚊𝚝𝚒𝚏𝚘𝚛𝚖: 𝚌𝚑𝚛𝚘𝚖𝚎(𝙻𝚒𝚗𝚞𝚡)
+┃𝚖𝚘𝚜𝚎 : *${mode}*
+┃𝚙𝚛𝚎𝚏𝚒𝚡: [${pref}]
+┃𝚝𝚑𝚎𝚖𝚎:𝙹𝙾𝚎𝚕 𝚃𝚎𝚌𝚑
+┃𝙻𝚒𝚋𝚛𝚊𝚛𝚢:𝚋𝚊𝚒𝚕𝚠𝚊𝚢𝚜(𝚆𝙱)
+┗━━━━━━━━━━━━`
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "© Powered By Mercedes"
+              text: "𝚙𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢 𝙹𝙾𝚎𝚕 𝚔𝚊𝚗𝚐'𝚘𝚖𝚊"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/Mercedes.jpg')}, { upload: Matrix.waUploadToServer})), 
@@ -113,29 +115,29 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
                 {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "ALIVE",
+            display_text: "𝙰𝚕𝚒𝚟𝚎",
             id: `${prefix}alive`
           })
         },
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "PING",
+            display_text: "𝚙𝚒𝚗𝚐",
             id: `${prefix}ping`
           })
         },
                 {
                   "name": "single_select",
-                  "buttonParamsJson": `{"title":"Tap For Open Menu",
+                  "buttonParamsJson": `{"title":"𝚖𝚎𝚗𝚞𝚜",
                  "sections":
                    [{
-                    "title":"Mercedes All Menu",
+                    "title":"𝙹𝙾𝚎𝚕 All Menu",
                     "highlight_label":"ALL MENU",
                     "rows":[
                       {
                        "header":"",
                        "title":"🔰 ᴀʟʟ ᴍᴇɴᴜ",
-                       "description":"Mercedes All Menu",
+                       "description":"𝙹𝙾𝚎𝚕 All Menu",
                        "id":"View All Menu"
                       },
                       {
@@ -165,7 +167,7 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
                      {
                         "header":"",
                         "title":"👨‍💻 ᴏᴡɴᴇʀ ᴍᴇɴᴜ",
-                        "description":"Only Marisel's Commands",
+                        "description":"Only 𝙹𝚘𝚎𝚕's Commands",
                         "id":"Owner Menu"
                       },
                       {
@@ -219,16 +221,18 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
   }
       if (selectedId == "View All Menu") {
         const str = `Hello ${m.pushName} ${pushwish}
-╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *Mercedes*
-│📍 ᴠᴇʀꜱɪᴏɴ: 2.0.3
-│👨‍💻 ᴏᴡɴᴇʀ : *Marisel*      
-│👤 ɴᴜᴍʙᴇʀ: 254740007567
-│💻 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
-│🛡 ᴍᴏᴅᴇ: *${config.MODE}*
-│💫 ᴘʀᴇғɪx: [${pref}]
-╰─────────────━┈⊷ 
-╭━❮ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 ❯━╮
+┏❑
+┃𝚋𝚘𝚝 𝚗𝚊𝚖𝚎:𝙹𝙾𝚎𝚕 𝚋𝚘𝚝*
+╽𝚟𝚒𝚜𝚒𝚘𝚗: 𝟼.𝟶.𝟶
+┃ᴏᴡɴᴇʀ : *𝙹𝚘𝚎𝚕*      
+┃𝚜𝚝𝚊𝚝𝚞𝚜:𝚋𝚘𝚝 𝚒𝚜 𝚘𝚗𝚕𝚒𝚗𝚎
+┃𝚙𝚕𝚊𝚝𝚒𝚏𝚘𝚛𝚖: 𝚌𝚑𝚛𝚘𝚖𝚎(𝙻𝚒𝚗𝚞𝚡)
+┃𝚖𝚘𝚜𝚎 : *${mode}*
+┃𝚙𝚛𝚎𝚏𝚒𝚡: [${pref}]
+┃𝚝𝚑𝚎𝚖𝚎:𝙹𝙾𝚎𝚕 𝚃𝚎𝚌𝚑
+┃𝙻𝚒𝚋𝚛𝚊𝚛𝚢:𝚋𝚊𝚒𝚕𝚠𝚊𝚢𝚜(𝚆𝙱)
+┗❑
+┏❐𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁
 ┃✰ ${prefix}𝙰𝚃𝚃𝙿
 ┃✰ ${prefix}𝙰𝚃𝚃𝙿2
 ┃✰ ${prefix}𝙰𝚃𝚃𝙿3
@@ -236,8 +240,8 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
 ┃✰ ${prefix}𝙳𝙱𝙸𝙽𝙰𝚁𝚈
 ┃✰ ${prefix}𝙴𝙼𝙾𝙹𝙸𝙼𝙸𝚇
 ┃✰ ${prefix}𝙼𝙿3
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝙰𝙸 ❯━╮
+┗❑
+┏❐𝙰𝙸 
 ┃✰ ${prefix}𝙰𝚒
 ┃✰ ${prefix}𝙱𝚞𝚐
 ┃✰ ${prefix}𝚁𝚎𝚙𝚘𝚛𝚝
@@ -245,15 +249,15 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
 ┃✰ ${prefix}𝙳𝚊𝚕𝚕𝚎
 ┃✰ ${prefix}𝚁𝚎𝚖𝚒𝚗𝚒
 ┃✰ ${prefix}𝙶𝚎𝚖𝚒𝚗𝚒
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝚃𝙾𝙾𝙻 ❯━╮
+┗❑
+┏❐𝚃𝙾𝙾𝙻 
 ┃✰ ${prefix}𝙲𝚊𝚕𝚌𝚞𝚕𝚊𝚝𝚘𝚛
 ┃✰ ${prefix}𝚃𝚎𝚖𝚙𝚖𝚊𝚒𝚕
 ┃✰ ${prefix}𝙲𝚑𝚎𝚌𝚔𝚖𝚊𝚒𝚕
 ┃✰ ${prefix}𝚃𝚛𝚝
 ┃✰ ${prefix}𝚃𝚝𝚜
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝙶𝚁𝙾𝚄𝙿 ❯━╮
+┗❑
+┏❐𝙶𝚁𝙾𝚄𝙿 
 ┃✰ ${prefix}𝙻𝚒𝚗𝚔𝙶𝚛𝚘𝚞𝚙
 ┃✰ ${prefix}𝚂𝚎𝚝𝚙𝚙𝚐𝚌
 ┃✰ ${prefix}𝚂𝚎𝚝𝚗𝚊𝚖𝚎
@@ -270,8 +274,8 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
 ┃✰ ${prefix}𝙿𝚛𝚘𝚖𝚘𝚝𝚎
 ┃✰ ${prefix}𝙳𝚎𝚖𝚘𝚝𝚎
 ┃✰ ${prefix}𝙶𝚎𝚝𝚋𝚒𝚘
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 ❯━╮
+┗❑
+╭❐𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳
 ┃✰ ${prefix}𝙰𝚙𝚔
 ┃✰ ${prefix}𝙵𝚊𝚌𝚎𝚋𝚘𝚘𝚔
 ┃✰ ${prefix}𝙼𝚎𝚍𝚒𝚊𝚏𝚒𝚛𝚎
@@ -287,8 +291,8 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
 ┃✰ ${prefix}𝚈𝚝𝚖𝚙3𝚍𝚘𝚌
 ┃✰ ${prefix}𝚈𝚝𝚖𝚙4𝚍𝚘𝚌
 ┃✰ ${prefix}𝚃𝚒𝚔𝚝𝚘𝚔
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝚂𝙴𝙰𝚁𝙲𝙷 ❯━╮
+╰❑
+╭❐𝚂𝙴𝙰𝚁𝙲𝙷
 ┃✰ ${prefix}𝙿𝚕𝚊𝚢
 ┃✰ ${prefix}𝚈𝚝𝚜
 ┃✰ ${prefix}𝙸𝚖𝚍𝚋
@@ -300,15 +304,15 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
 ┃✰ ${prefix}𝚈𝚝𝚜𝚎𝚊𝚛𝚌𝚑
 ┃✰ ${prefix}𝚁𝚒𝚗𝚐𝚝𝚘𝚗𝚎
 ┃✰ ${prefix}𝙻𝚢𝚛𝚒𝚌𝚜
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝙼𝙰𝙸𝙽 ❯━╮
+╰❑
+╭❐𝙼𝙰𝙸𝙽
 ┃✰ ${prefix}𝙿𝚒𝚗𝚐
 ┃✰ ${prefix}𝙰𝚕𝚒𝚟𝚎
 ┃✰ ${prefix}𝙾𝚠𝚗𝚎𝚛
 ┃✰ ${prefix}𝙼𝚎𝚗𝚞
 ┃✰ ${prefix}𝙸𝚗𝚏𝚘𝚋𝚘𝚝
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝙾𝚆𝙽𝙴𝚁 ❯━╮
+╰❑
+╭❐𝙾𝚆𝙽𝙴𝚁
 ┃✰ ${prefix}𝙹𝚘𝚒𝚗
 ┃✰ ${prefix}𝙻𝚎𝚊𝚟𝚎
 ┃✰ ${prefix}𝙱𝚕𝚘𝚌𝚔
@@ -321,12 +325,12 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
 ┃✰ ${prefix}𝙰𝚕𝚠𝚊𝚢𝚜𝙾𝚗𝚕𝚒𝚗𝚎
 ┃✰ ${prefix}𝙰𝚞𝚝𝚘𝚁𝚎𝚊𝚍
 ┃✰ ${prefix}𝚊𝚞𝚝𝚘𝚜𝚟𝚒𝚎𝚠
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝚂𝚃𝙰𝙻𝙺 ❯━╮
+╰❑
+╭❐𝚂𝚃𝙰𝙻𝙺
 ┃✰ ${prefix}𝚃𝚛𝚞𝚎𝚌𝚊𝚕𝚕𝚎𝚛
 ┃✰ ${prefix}𝙸𝚗𝚜𝚝𝚊𝚂𝚝𝚊𝚕𝚔
 ┃✰ ${prefix}𝙶𝚒𝚝𝚑𝚞𝚋𝚂𝚝𝚊𝚕𝚔
-╰━━━━━━━━━━━━━━━⪼
+╰❐
    `;
         let fgg = {
             key: {
@@ -363,11 +367,11 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
 });
 }
    if ( selectedId == "Downloader Menu") {
-     const str = `╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str = `╭───❐ *s ᴇ ʀ ᴠ ᴇ ʀ* 
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 ❯━╮
+╰❑
+╭❐𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳
 ┃✰ ${prefix}𝙰𝚙𝚔
 ┃✰ ${prefix}𝙵𝚊𝚌𝚎𝚋𝚘𝚘𝚔
 ┃✰ ${prefix}𝙼𝚎𝚍𝚒𝚊𝚏𝚒𝚛𝚎
@@ -383,7 +387,7 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
 ┃✰ ${prefix}𝚈𝚝𝚖𝚙3𝚍𝚘𝚌
 ┃✰ ${prefix}𝚈𝚝𝚖𝚙4𝚍𝚘𝚌
 ┃✰ ${prefix}𝚃𝚒𝚔𝚝𝚘𝚔
-╰━━━━━━━━━━━━━━━⪼`
+╰❑`
 await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/Mercedes.jpg'), 
   caption: str, 
@@ -403,11 +407,11 @@ await Matrix.sendMessage(m.from, {
 }
    
    if ( selectedId == "Group Menu") {
-     const str = `╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str = `╭───❐ *s ᴇ ʀ ᴠ ᴇ ʀ* 
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝙶𝚁𝙾𝚄𝙿 ❯━╮
+╰❑
+╭❐ 𝙶𝚁𝙾𝚄𝙿 
 ┃✰ ${prefix}𝙻𝚒𝚗𝚔𝙶𝚛𝚘𝚞𝚙
 ┃✰ ${prefix}𝚂𝚎𝚝𝚙𝚙𝚐𝚌
 ┃✰ ${prefix}𝚂𝚎𝚝𝚗𝚊𝚖𝚎
@@ -423,7 +427,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙿𝚛𝚘𝚖𝚘𝚝𝚎
 ┃✰ ${prefix}𝙳𝚎𝚖𝚘𝚝𝚎
 ┃✰ ${prefix}𝙶𝚎𝚝𝚋𝚒𝚘
-╰━━━━━━━━━━━━━━━⪼
+╰❑
      `
      await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/Mercedes.jpg'), 
@@ -439,17 +443,17 @@ await Matrix.sendMessage(m.from, {
 }
    
    if (selectedId == "Main Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str =`╭───❐ *s ᴇ ʀ ᴠ ᴇ ʀ* 
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝙼𝙰𝙸𝙽 ❯━╮
+╰❑
+╭❐ 𝙼𝙰𝙸𝙽 
 ┃✰ ${prefix}𝙿𝚒𝚗𝚐
 ┃✰ ${prefix}𝙰𝚕𝚒𝚟𝚎
 ┃✰ ${prefix}𝙾𝚠𝚗𝚎𝚛
 ┃✰ ${prefix}𝙼𝚎𝚗𝚞
 ┃✰ ${prefix}𝙸𝚗𝚏𝚘𝚋𝚘𝚝
-╰━━━━━━━━━━━━━━━⪼`
+╰❑`
 await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/Mercedes.jpg'), 
   caption: str, 
@@ -469,11 +473,11 @@ await Matrix.sendMessage(m.from, {
 }
    
    if (selectedId == "Owner Menu") {
-     const str = `╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str = `╭───❐ *s ᴇ ʀ ᴠ ᴇ ʀ* 
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝙾𝚆𝙽𝙴𝚁 ❯━╮
+╰❑
+┏❐ 𝙾𝚆𝙽𝙴𝚁 
 ┃✰ ${prefix}𝙹𝚘𝚒𝚗
 ┃✰ ${prefix}𝙻𝚎𝚊𝚟𝚎
 ┃✰ ${prefix}𝙱𝚕𝚘𝚌𝚔
@@ -488,7 +492,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙰𝚕𝚠𝚊𝚢𝚜𝙾𝚗𝚕𝚒𝚗𝚎
 ┃✰ ${prefix}𝙰𝚞𝚝𝚘𝚁𝚎𝚊𝚍
 ┃✰ ${prefix}𝚊𝚞𝚝𝚘𝚜𝚟𝚒𝚎𝚠
-╰━━━━━━━━━━━━━━━⪼`
+╰❑`
 await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/Mercedes.jpg'), 
   caption: str, 
@@ -508,11 +512,11 @@ await Matrix.sendMessage(m.from, {
 }
    
    if (selectedId == "Search Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str =`╭───❐ *s ᴇ ʀ ᴠ ᴇ ʀ* 
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝚂𝙴𝙰𝚁𝙲𝙷 ❯━╮
+╰❑
+┏❐ 𝚂𝙴𝙰𝚁𝙲𝙷 
 ┃✰ ${prefix}𝙿𝚕𝚊𝚢
 ┃✰ ${prefix}𝚈𝚝𝚜
 ┃✰ ${prefix}𝙸𝚖𝚍𝚋
@@ -524,7 +528,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝚈𝚝𝚜𝚎𝚊𝚛𝚌𝚑
 ┃✰ ${prefix}𝚁𝚒𝚗𝚐𝚝𝚘𝚗𝚎
 ┃✰ ${prefix}𝙻𝚢𝚛𝚒𝚌𝚜
-╰━━━━━━━━━━━━━━━⪼`
+┗❑`
 await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/Mercedes.jpg'), 
   caption: str, 
@@ -543,16 +547,16 @@ await Matrix.sendMessage(m.from, {
 });
 }
    if (selectedId == "Stalk Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str =`╭───❐ *s ᴇ ʀ ᴠ ᴇ ʀ* 
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝚂𝚃𝙰𝙻𝙺 ❯━╮
+╰❑
+┏❐❮ 𝚂𝚃𝙰𝙻𝙺 
 ┃✰ ${prefix}𝙽𝚘𝚠𝚊
 ┃✰ ${prefix}𝚃𝚛𝚞𝚎𝚌𝚊𝚕𝚕𝚎𝚛
 ┃✰ ${prefix}𝙸𝚗𝚜𝚝𝚊𝚂𝚝𝚊𝚕𝚔
 ┃✰ ${prefix}𝙶𝚒𝚝𝚑𝚞𝚋𝚂𝚝𝚊𝚕𝚔
-╰━━━━━━━━━━━━━━━⪼`
+╰❑`
 await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/Mercedes.jpg'), 
   caption: str, 
@@ -572,18 +576,18 @@ await Matrix.sendMessage(m.from, {
 }
    
    if (selectedId == "Tool Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str =`╭───❐ *s ᴇ ʀ ᴠ ᴇ ʀ* 
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝚃𝙾𝙾𝙻 ❯━╮
+╰❐
+╭━❐ 𝚃𝙾𝙾𝙻 
 ┃✰ ${prefix}𝙲𝚊𝚕𝚌𝚞𝚕𝚊𝚝𝚘𝚛
 ┃✰ ${prefix}𝚃𝚎𝚖𝚙𝚖𝚊𝚒𝚕
 ┃✰ ${prefix}𝙲𝚑𝚎𝚌𝚔𝚖𝚊𝚒𝚕
 ┃✰ ${prefix}𝙸𝚗𝚏𝚘
 ┃✰ ${prefix}𝚃𝚛𝚝
 ┃✰ ${prefix}𝚃𝚝𝚜
-╰━━━━━━━━━━━━━━━⪼`
+╰❑`
 await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/Mercedes.jpg'), 
   caption: str, 
@@ -603,11 +607,11 @@ await Matrix.sendMessage(m.from, {
 }
    
    if (selectedId == "Ai Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str =`╭───❐ *s ᴇ ʀ ᴠ ᴇ ʀ* 
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝙰𝙸 ❯━╮
+╰❐
+╭━❐ 𝙰𝙸 
 ┃✰ ${prefix}𝙰𝚒
 ┃✰ ${prefix}𝙱𝚞𝚐
 ┃✰ ${prefix}𝚁𝚎𝚙𝚘𝚛𝚝
@@ -615,7 +619,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙳𝚊𝚕𝚕𝚎
 ┃✰ ${prefix}𝚁𝚎𝚖𝚒𝚗𝚒
 ┃✰ ${prefix}𝙶𝚎𝚖𝚒𝚗𝚒
-╰━━━━━━━━━━━━━━━⪼`
+╰❑`
 await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/Mercedes.jpg'), 
   caption: str, 
@@ -635,11 +639,11 @@ await Matrix.sendMessage(m.from, {
 }
    
    if (selectedId == "Converter Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str =`╭───❐ *s ᴇ ʀ ᴠ ᴇ ʀ* 
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 ❯━╮
+╰❑
+╭━❐ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 
 ┃✰ ${prefix}𝙰𝚃𝚃𝙿
 ┃✰ ${prefix}𝙰𝚃𝚃𝙿2
 ┃✰ ${prefix}𝙰𝚃𝚃𝙿3
@@ -647,7 +651,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙳𝙱𝙸𝙽𝙰𝚁𝚈
 ┃✰ ${prefix}𝙴𝙼𝙾𝙹𝙸𝙼𝙸𝚇
 ┃✰ ${prefix}𝙼𝙿3
-╰━━━━━━━━━━━━━━━⪼
+╰❑
      `
      await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/Mercedes.jpg'), 
