@@ -20,7 +20,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
 
       if (gdriveInfo && gdriveInfo.status && gdriveInfo.data) {
         const mediaUrl = gdriveInfo.data;
-        const caption = `> © Powered By Mercedes`;
+        const caption = `> 𝚋𝚢 𝙹𝙾𝚎𝚕 𝚔𝚊𝚗𝚐'𝚘𝚖𝚊`;
 
         // Inferring the file type based on the file extension
         const extension = mediaUrl.split('.').pop().toLowerCase();
